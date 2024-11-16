@@ -1,0 +1,11 @@
+server:
+  port: 8090
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          client-id: bidv-client
+          issuer-uri: http://192.168.3.225:8080/realms/bidv-realm
+          jwk-set-uri: http://192.168.3.225:8080/realms/bidv-realm/protocol/openid-connect/certs
